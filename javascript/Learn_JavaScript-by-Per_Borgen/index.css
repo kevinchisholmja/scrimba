@@ -14,8 +14,8 @@ body {
 ------------------------------ */
 
 .container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
     align-items: center;
     
     max-width: 600px;
@@ -39,6 +39,40 @@ body {
     max-height: 350px;
     
     padding: 10%;
+}
+
+/* -----------------------------
+   Middle column
+------------------------------ */
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Consistent spacing */
+  width: 150px; /* Fixed width for consistency */
+  color: #EEEEEE;
+}
+
+/* Timer styling */
+.timer-box {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  min-width: 120px;
+}
+
+/* Button styling */
+.control-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.control-buttons button {
+  margin: 0;
+  padding: 0.75rem;
 }
 
 /* -----------------------------
